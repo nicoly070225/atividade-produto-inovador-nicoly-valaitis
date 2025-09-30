@@ -1,0 +1,5 @@
+tema: receitas
+titulo: tempero do dia
+seções: imagens, lista, link
+cores: branco e laranja 
+link: para contato
