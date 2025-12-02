@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #040404;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background: #e53475;
+  color: #fff;
+  padding: 15px;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  background-color:rgb(236, 99, 211);
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: rgb(53, 48, 48) ;
+}
+
+/* Submenu */
+.submenu ul {
+  display: none;
+  position: absolute;
+  background: #ce4578;
+  top: 100%;
+  left: 0;
+}
+
+.submenu:hover ul {
+  display: inline-block;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+/* Caixas (Box Model) */
+.caixa {
+  width: 200px;
+  height: 100px;
+  background: #ecece4;
+  border: 5px solid #e388b1;
+  padding: 10px;
+  margin: 15px auto;
+  line-height: 100px;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  background: #f55590;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}

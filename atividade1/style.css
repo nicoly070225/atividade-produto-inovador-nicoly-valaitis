@@ -1,0 +1,122 @@
+      /* CONFIGURAÇÕES GERAIS */
+        * {
+            box-sizing: border-box; /* mágico! */
+        }
+
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            margin-top: 2rem;
+        }
+
+        /* MENU (LISTA SEMÂNTICA + INLINE-BLOCK) */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: #333;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block; /* menu horizontal */
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:link { color: #fff; }
+        nav ul li a:visited { color: #ddd; }
+        nav ul li a:hover { background: #444; }
+        nav ul li a:active { background: #666; }
+
+        /* SEÇÃO COM FLEXBOX */
+        .flex-container {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        /* IMAGEM RESPONSIVA */
+        .img-redonda {
+            max-width: 100%;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* LISTAS */
+        .lista-personalizada {
+            list-style-type: square;
+            padding-left: 1.5rem;
+        }
+
+        /* TABELA COM ZEBRA STRIPES */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* clean design */
+            margin: 2rem 0;
+        }
+
+        th, td {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        /* EXEMPLOS DE POSITION */
+        .caixa-relativa {
+            position: relative;
+            background: #dfe7fd;
+            padding: 20px;
+            margin: 1rem 0;
+        }
+
+        .absoluto {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #97a6e8;
+            padding: 5px 10px;
+        }
+
+        .fixo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
+            z-index: 1000;
+        }
+
+        /* CENTRALIZAÇÃO */
+        .caixa-centralizada {
+            width: 300px;
+            margin: 0 auto;
+            background: #eee;
+            padding: 1rem;
+            border-radius: 8px;
+        }
